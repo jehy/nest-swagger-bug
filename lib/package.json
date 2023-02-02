@@ -1,0 +1,29 @@
+{
+  "name": "@nest-swagger-bug/shared",
+  "version": "0.0.1",
+  "title": "Common entities for node operations",
+  "engines": {
+    "node": "^18"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "dependencies": {
+    "rimraf": "3.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf dist"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./types": "./dist/types/index.js",
+    "./order": "./dist/order/index.js",
+    "./orderHistory": "./dist/orderHistory/index.js",
+    "./user": "./dist/user/index.js",
+    "./proxyClient": "./dist/proxyClient/index.js"
+  }
+}
